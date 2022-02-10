@@ -1,27 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:github_users/model/user.dart';
 
 class UserTile extends StatelessWidget {
-  final String name;
-  final String location;
-  final String profileImage;
+  final User user;
 
   const UserTile({
     Key? key,
-    required this.name,
-    required this.location,
-    required this.profileImage,
+    required this.user,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return ListTile(
       leading: CircleAvatar(
-        backgroundImage: AssetImage(profileImage),
+        backgroundImage: AssetImage(user.profileImage),
         radius: 25.0,
       ),
-      title: Text(name),
+      title: Text(user.name),
       subtitle: Text(
-        location,
+        user.location,
         style: TextStyle(fontSize: 12.0),
       ),
       trailing: GestureDetector(

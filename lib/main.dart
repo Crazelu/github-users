@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:github_users/ui/view/users_view.dart';
+import 'package:github_users/ui/views/users_view.dart';
 
 void main() {
   runApp(MaterialApp(

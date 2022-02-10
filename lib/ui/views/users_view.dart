@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:github_users/model/user.dart';
 import 'package:github_users/ui/shared/user_tile.dart';
 
 class UsersView extends StatefulWidget {
@@ -26,19 +27,25 @@ class _UsersViewState extends State<UsersView> {
       body: ListView(
         children: [
           UserTile(
-            name: 'Tom Preston-Werner',
-            location: "San Francisco",
-            profileImage: 'assets/raya.png',
+            user: User(
+              name: 'Tom Preston-Werner',
+              location: "San Francisco",
+              profileImage: 'assets/raya.png',
+            ),
           ),
           UserTile(
-            name: 'Chris Wanstrath',
-            location: "Unavailable",
-            profileImage: 'assets/raya.png',
+            user: User(
+              name: 'Tom Preston-Werner',
+              location: "San Francisco",
+              profileImage: 'assets/raya.png',
+            ),
           ),
           UserTile(
-            name: 'pjhyett',
-            location: "San Francisco",
-            profileImage: 'assets/raya.png',
+            user: User(
+              name: 'Tom Preston-Werner',
+              location: "San Francisco",
+              profileImage: 'assets/raya.png',
+            ),
           ),
         ],
       ),
