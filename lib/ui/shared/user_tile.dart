@@ -13,7 +13,7 @@ class UserTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       leading: CircleAvatar(
-        backgroundImage: AssetImage(user.profileImage),
+        backgroundImage: NetworkImage(user.profileImage),
         radius: 25.0,
       ),
       title: Text(user.name),
